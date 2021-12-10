@@ -7,11 +7,9 @@ typedef struct node {
 } node_t;
 
 void printlist(node_t *head) {
-
     node_t *temporary = head;
 
     while (temporary != NULL) {
-
         printf("%d - ", temporary->value);
         temporary = temporary->next;
     }
@@ -30,6 +28,7 @@ int main() {
     node_t *tmp;
 
     for (int i = 0; i < 25; ++i) {
+        
     }
     tmp = create_new_node(43);
     head = tmp;
