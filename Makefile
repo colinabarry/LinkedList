@@ -2,5 +2,5 @@ CC=clang
 
 all: LinkedListTest
 
-LinkedListTest: LinkedListTest.c
-	$(CC) -o LinkedListTest LinkedListTest.c
+LinkedListTest: src\LinkedListTest.c
+	$(CC) -o LinkedListTest src\LinkedListTest.c
