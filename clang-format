@@ -1,0 +1,16 @@
+cStandard: C99
+BasedOnStyle: LLVM
+IndentWidth: 4
+TabWidth: 4
+ColumnLimit: 0
+AccessModifierOffset: -4
+NamespaceIndentation: All
+BreakBeforeBraces: false
+BraceWrapping:
+  AfterEnum: false
+  AfterStruct: false
+  AfterControlStatement: false
+  AfterFunction: false
+  AfterUnion: true
+  AfterExternBlock: false
+  BeforeElse: false
