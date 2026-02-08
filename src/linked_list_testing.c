@@ -1,6 +1,6 @@
+#include "linked_list.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "linked_list.h"
 
 int main() {
     Node_T *head = NULL;
@@ -8,9 +8,9 @@ int main() {
     int numNodes;
 
     printf("How many nodes would you like?");
-    scanf("&d", &numNodes);
+    scanf("%d", &numNodes);
 
-    for(int i = 0; i < numNodes; ++i) {
+    for (int i = 0; i < numNodes; ++i) {
         tmp = createNewNode(i);
         head = insertAtHead(&head, tmp);
     }

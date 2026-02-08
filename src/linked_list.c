@@ -1,6 +1,6 @@
+#include "linked_list.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "linked_list.h"
 
 Node_T *createNewNode(int value) {
     Node_T *result = malloc(sizeof(Node_T));
@@ -22,8 +22,9 @@ void insertAfterNode(Node_T *nodeToInsertAfter, Node_T *newNode) {
 
 Node_T *findNode(Node_T *head, int value) {
     Node_T *tmp = head;
-    while(tmp != NULL) {
-        if(tmp->value == value) return tmp;
+    while (tmp != NULL) {
+        if (tmp->value == value)
+            return tmp;
         tmp = tmp->next;
     }
     return NULL;
@@ -31,7 +32,7 @@ Node_T *findNode(Node_T *head, int value) {
 
 void printList(Node_T *head) {
     Node_T *tmp = head;
-    while(tmp != NULL) {
+    while (tmp != NULL) {
         printf("%d - ", tmp->value);
         tmp = tmp->next;
     }
